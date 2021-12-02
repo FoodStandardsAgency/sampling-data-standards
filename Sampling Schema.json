@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Commissioned Sampling Schema",
+  "description": "The schema required for sampling data commissioned directly by the FSA.",
+  "type": "object",
+  "fields": [
+    {
+      "name": "lab_id",
+      "title": "lab_id",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "analysing_lab",
+      "title": "analysing_lab",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "risk",
+      "title": "risk",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "test_id",
+      "title": "test_id",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "lod_loq",
+      "title": "lod_loq",
+      "constraints": {
+        "required": false,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "outcome",
+      "title": "outcome",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "sample_timestamp",
+      "title": "sample_timestamp",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "name": "certificate_of_analysis",
+      "title": "certificate_of_analysis",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    },
+    {
+      "name": "photos",
+      "title": "photos",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    },
+    {
+      "name": "product_type",
+      "title": "product_type",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "brand_name",
+      "title": "brand_name",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "batch_number",
+      "title": "batch_number",
+      "constraints": {
+        "required": false,
+        "type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    },
+    {
+      "name": "country_of_origin",
+      "title": "country_of_origin",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "shelf_life",
+      "title": "shelf_life",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "name": "business_name",
+      "title": "business_name",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "business_address_line_1",
+      "title": "business_address_line_1",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "business_address_line_2",
+      "title": "business_address_line_2",
+      "constraints": {
+        "required": false,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "business_address_line_3",
+      "title": "business_address_line_3",
+      "constraints": {
+        "required": false,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "business_postcode",
+      "title": "business_postcode",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "name": "business_type",
+      "title": "business_type",
+      "constraints": {
+        "required": true,
+        "type": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    }
+  ]
+}
