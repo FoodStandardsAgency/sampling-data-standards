@@ -5,9 +5,16 @@ This document describes the data and metadata standards that we expect partners 
 
 This document contains a schema for returns as well as some guidance on associated metadata, but it does not cover the specifics of data transfer.
 
-###
+### Basic Technical Standards
+In addition to any return of data which uses a spreadsheet, the FSa requires all suppliers to provide sampling data in machine readable formats. Currently, acceptable formats are comma separated values `.csv` and javascript object notation `.json` files.
+
+Data provided to the FSA must be in the unicode encoding standard `UTF-8`.
+
+Where a date is required, but may be imprecise, the FSA expects to still recieve a fully qualified ISO8601 date and time value, but with a substituted time or day where appropriate. For example, a best before date of "April 2022" should default to midnight at the first of April, i.e., `2022-04-01T00:00:00Z` or a sampling date where the time is unavailable should use midnight as the default time, i.e., `2022-01-04T00:00:00Z`. Dates which are imprecise by more than a day should not be used.
 
 ### Overview
+
+There is also a JSON Schema in this repository for the standard.
 
 Index|Field Name|Description|Data Type|Controlled Vocabulary|Source
 -----|----------|-----------|---------|---------------------|-------

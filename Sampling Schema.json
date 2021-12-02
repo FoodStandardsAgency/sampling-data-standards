@@ -6,7 +6,7 @@
   "fields": [
     {
       "name": "lab_id",
-      "title": "lab_id",
+      "title": "Laboratory Reference",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -14,7 +14,7 @@
     },
     {
       "name": "analysing_lab",
-      "title": "analysing_lab",
+      "title": "Analysing Laboratory",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -22,7 +22,7 @@
     },
     {
       "name": "risk",
-      "title": "risk",
+      "title": "Risk Name",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -30,7 +30,7 @@
     },
     {
       "name": "test_id",
-      "title": "test_id",
+      "title": "Test Used",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -38,7 +38,7 @@
     },
     {
       "name": "lod_loq",
-      "title": "lod_loq",
+      "title": "Limits of Detection or Quantification",
       "constraints": {
         "required": false,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -46,15 +46,16 @@
     },
     {
       "name": "outcome",
-      "title": "outcome",
+      "title": "Outcome",
       "constraints": {
         "required": true,
-        "type": "http://www.w3.org/2001/XMLSchema#string"
+        "type": "http://www.w3.org/2001/XMLSchema#string",
+        "enum": ["compliant", "non-compliant", "inconclusive"]
       }
     },
     {
       "name": "sample_timestamp",
-      "title": "sample_timestamp",
+      "title": "Sample Timestamp",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -62,7 +63,7 @@
     },
     {
       "name": "certificate_of_analysis",
-      "title": "certificate_of_analysis",
+      "title": "Certificate of Analysis Supplied",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -70,7 +71,7 @@
     },
     {
       "name": "photos",
-      "title": "photos",
+      "title": "Photographs Supplied",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -78,7 +79,7 @@
     },
     {
       "name": "product_type",
-      "title": "product_type",
+      "title": "Product Type",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -86,7 +87,7 @@
     },
     {
       "name": "brand_name",
-      "title": "brand_name",
+      "title": "Brand Name",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -94,7 +95,7 @@
     },
     {
       "name": "batch_number",
-      "title": "batch_number",
+      "title": "Batch Number",
       "constraints": {
         "required": false,
         "type": "http://www.w3.org/2001/XMLSchema#int"
@@ -102,7 +103,7 @@
     },
     {
       "name": "country_of_origin",
-      "title": "country_of_origin",
+      "title": "Country of Origin",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -110,7 +111,7 @@
     },
     {
       "name": "shelf_life",
-      "title": "shelf_life",
+      "title": "Shelf Life",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -118,7 +119,7 @@
     },
     {
       "name": "business_name",
-      "title": "business_name",
+      "title": "Business Name",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -126,7 +127,7 @@
     },
     {
       "name": "business_address_line_1",
-      "title": "business_address_line_1",
+      "title": "Business Address Line 1",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -134,7 +135,7 @@
     },
     {
       "name": "business_address_line_2",
-      "title": "business_address_line_2",
+      "title": "Business Address Line 2",
       "constraints": {
         "required": false,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -142,7 +143,7 @@
     },
     {
       "name": "business_address_line_3",
-      "title": "business_address_line_3",
+      "title": "Business Address Line 3",
       "constraints": {
         "required": false,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -150,7 +151,7 @@
     },
     {
       "name": "business_postcode",
-      "title": "business_postcode",
+      "title": "Business Postcode",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -158,7 +159,7 @@
     },
     {
       "name": "business_type",
-      "title": "business_type",
+      "title": "Business Type",
       "constraints": {
         "required": true,
         "type": "http://www.w3.org/2001/XMLSchema#string"
