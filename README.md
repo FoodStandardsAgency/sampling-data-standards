@@ -14,7 +14,7 @@ Where a date is required, but may be imprecise, the FSA expects to still recieve
 
 ### Overview
 
-There is also a JSON Schema in this repository for the standard.
+There is also a [JSON Schema](https://github.com/FoodStandardsAgency/sampling-data-standards/blob/main/Sampling%20Schema.json) in this repository for the standard.
 
 Index|Field Name|Description|Data Type|Controlled Vocabulary|Source
 -----|----------|-----------|---------|---------------------|-------
